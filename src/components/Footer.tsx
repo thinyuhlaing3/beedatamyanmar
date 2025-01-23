@@ -1,12 +1,12 @@
 import Link from "next/link";
-import BEE_Logo from "./logo/BEE_Logo.png";
+import Footer_Logo from "./logo/Footer_Logo.png";
 
 export default function Footer() {
   return (
     <>
       <div className="bg-gray-900 text-gray-200 mt-20">
         <div className="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-200 sm:flex justify-between mx-auto">
-          <div className="p-5 sm:w-2/12 border-r border-gray-700">
+          <div className="p-5 sm:w-2/12  border-gray-700">
             <div className="text-sm uppercase text-secondary font-bold">
               Menu
             </div>
@@ -33,13 +33,40 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="p-5 sm:w-7/12 border-r border-gray-700 text-center flex flex-col items-center gap-3">
+          <div className="p-5 sm:w-2/12  border-gray-700">
+            <div className="text-sm uppercase text-secondary font-bold">
+              Services
+            </div>
+            <ul>
+              <li className="my-2">
+                <Link href="#" className="hover:text-secondary">
+                  Home
+                </Link>
+              </li>
+              <li className="my-2">
+                <Link href="#" className="hover:text-secondary">
+                  Odoo ERP
+                </Link>
+              </li>
+              <li className="my-2">
+                <Link href="#" className="hover:text-secondary">
+                  Moodle LMS
+                </Link>
+              </li>
+              <li className="my-2">
+                <Link href="#" className="hover:text-secondary">
+                  Tickets
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="p-5 sm:w-7/12  border-gray-700 text-center flex flex-col items-center gap-5">
             {/* <h3 className="font-bold text-xl text-secondary mb-4">
               Componentity
             </h3> */}
-            <img src={BEE_Logo.src} alt="" className="w-44  h-18" />
+            <img src={Footer_Logo.src} alt="" className="w-44 rounded-md  h-18" />
 
-            <p className="text-gray-200 text-sm mb-10">
+            <p className="text-gray-200 text-sm ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s.

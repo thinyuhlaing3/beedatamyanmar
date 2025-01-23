@@ -1,5 +1,5 @@
 import Card from "../Card";
-
+import OdooImg from "../img/Odoo.png"
 export default function DevOps() {
   return (
     <div className="-mt-28 pt-28">
@@ -40,16 +40,18 @@ export default function DevOps() {
               id="scroll-card-0"
               zIndex={1}
               margin={{ left: "0px", right: "0px" }}
-              title="Built on Tailwind CSS"
-              description="Currently we support Tailwind CSS. Every component in the library is lightweight and flexible. Follow us for updates!"
+              title="We are Odoo ready partner in Myanmar. ​"
+              description="Our Odoo ERP Services:​"
               features={[
-                "Tailwind CSS - ready now",
-                "Figma - ready now",
-                "React - soon",
-                "Vuejs - soon",
-                "Angular - soon",
+                "Consultation",
+                "Implementation",
+                "Customization development",
+                "Cloud Server Hosting",
+                "Data Migration",
+                "Maintenance",
+                "User Training & System Support",
               ]}
-              imageSrc="https://raw.githubusercontent.com/creativetimofficial/public-assets/refs/heads/master/material-tailwind-pro/v3/free-features-1.png"
+              imageSrc="https://www.o2btechnologies.com/static/o2b_blog_odoo_ready_partner/Odoo%20Ready%20Partner.webp"
             />
 
             {/* Card 2 */}
