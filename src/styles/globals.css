@@ -34,5 +34,5 @@ body {
   @apply text-sm/6  text-white;
 }
 .logo {
-  @apply h-8 w-auto;
+  @apply h-10 w-auto  rounded-lg;
 }

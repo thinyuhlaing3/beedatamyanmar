@@ -1,37 +1,40 @@
 import Link from "@/components/ViewTransitionLink";
 
-export default function Blog() {
+export default function BlogCard() {
   const blogs = [
     {
-      title: "Understanding the Future of AI",
+      title: "What is Odoo sh?",
       description:
-        "Discover how artificial intelligence is shaping the future of technology and what it means for you.",
-      author: "Adrio Devid",
+        "ဒီကနေ့မှာတော့ All-in-one management software တခုဖြစ်ပြီး Open source software တခုလည်း ဖြစ်တဲ့ Odoo ERP software အား ကမ္ဘာနှင့် တဝှမ်း အသုံးပြုသူများ ပိုမို များပြားလာပြီ ဖြစ်ပါတယ်။ ",
+      author: "Admin",
       date: "Sep 10, 2025",
-      category: "Technology",
-      imgSrc: "https://clarity-tailwind.preview.uideck.com/images/blog-02.png",
+      category: "Knowledge Sharing",
+      imgSrc:
+        "https://www.beedatamyanmar.com/wp-content/uploads/2025/01/odoo-sh--940x740.jpeg",
       authorImg:
         "https://clarity-tailwind.preview.uideck.com/images/blog-01.png",
     },
     {
-      title: "Building Scalable Web Applications",
+      title: "Odoo Functional Training Course",
       description:
-        "Learn the key principles for designing and developing scalable web apps with modern frameworks.",
-      author: "Jane Doe",
+        "Odoo Functional Training Course ကိုတက်ရောက်ခြင်းဖြင့် သင်၏ Business အသိအမြင်များကို နည်းပညာဘက်တွင် မြှင့်တင်ပြီး သင်၏အနာဂတ်ကို မြှင့်တင်လိုက်ပါ…",
+      author: "Admin",
       date: "Sep 8, 2025",
-      category: "Development",
-      imgSrc: "https://clarity-tailwind.preview.uideck.com/images/blog-03.png",
+      category: "Training",
+      imgSrc:
+        "https://www.beedatamyanmar.com/wp-content/uploads/2025/01/306479426_105935282266817_1656337879101835776_n-940x740.png",
       authorImg:
         "https://clarity-tailwind.preview.uideck.com/images/blog-01.png",
     },
     {
-      title: "Exploring Cloud-Native Architecture",
+      title: "Software Developer တယောက် ဖြစ်ဖို့ ရည်မှန်းထားပါသလား",
       description:
-        "A comprehensive guide to understanding cloud-native architecture and its benefits for your business.",
-      author: "John Smith",
+        "Programming language များကို စတင် မလေ့လာခင် “Fundamental with Algorithm” အကြောင်းအရာကို စတင်လေ့လာကြရအောင်... ",
+      author: "Admin",
       date: "Sep 5, 2025",
-      category: "Cloud",
-      imgSrc: "https://clarity-tailwind.preview.uideck.com/images/blog-01.png",
+      category: "Training",
+      imgSrc:
+        "https://www.beedatamyanmar.com/wp-content/uploads/2019/10/softwareDev-1-1080x740-1.jpg",
       authorImg:
         "https://clarity-tailwind.preview.uideck.com/images/blog-01.png",
     },
@@ -42,12 +45,12 @@ export default function Blog() {
       {/* Header Section */}
       <div className="mb-12 space-y-4 text-center">
         <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">
-          Latest Articles
+          Latest Blogs
         </h2>
-        <p className="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
+        {/* <p className="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
           Stay updated with the latest trends, insights, and best practices in
           technology and development.
-        </p>
+        </p> */}
       </div>
 
       {/* Blog Cards */}

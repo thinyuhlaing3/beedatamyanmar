@@ -28,6 +28,7 @@ import {
   products,
 } from "@/utils";
 import { motion } from "framer-motion";
+import Footer from "./logo/Footer_Logo.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ export default function Header() {
   return (
     <header className="nav-bar-container">
       <nav aria-label="Global" className="nav-bar">
-        <div className="flex lg:flex-1">
+        <div className="flex mr-9 ">
           <a
             href="#"
             className="-m-1.5 p-1.5 flex gap-2 justify-center items-center"
@@ -43,17 +44,17 @@ export default function Header() {
             <span className="sr-only">NESTER</span>
             <img
               alt="Nester Logo - (1024 x 512)"
-              src={Favicon.src}
+              src={Footer.src}
               className="logo"
             />
-            <motion.div
+            {/* <motion.div
               // className="text-6xl"
               initial={{ opacity: 0, y: -200, rotateY: 0 }}
               animate={{ opacity: 1, y: 0, rotateY: 0 }}
               transition={{ delay: 2, duration: 0.4 }}
             >
               BEE
-            </motion.div>
+            </motion.div> */}
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -154,7 +155,7 @@ export default function Header() {
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-700 group-hover:bg-gray-600">
                       <item.icon
                         aria-hidden="true"
-                        className="h-6 w-6 text-gray-300 group-hover:text-indigo-400"
+                        className="h-6 w-6 text-gray-300 group-hover:text-secondary"
                       />
                     </div>
                     <div className="flex-auto">
@@ -213,7 +214,7 @@ export default function Header() {
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-700 group-hover:bg-gray-600">
                       <item.icon
                         aria-hidden="true"
-                        className="h-6 w-6 text-gray-300 group-hover:text-indigo-400"
+                        className="h-6 w-6 text-gray-300 group-hover:text-secondary"
                       />
                     </div>
                     <div className="flex-auto">
@@ -247,7 +248,15 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center ">
+          <Link
+            href="#"
+            className="relative flex  h-10 mr-3 w-full items-center justify-center px-3 before:absolute before:inset-0 before:rounded-full before:bg-[#ff7e33] before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          >
+            <span className="relative nav-text font-semibold text-white">
+              Request a Demo
+            </span>
+          </Link>
           <Link href={"#"} className="nav-text">
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
@@ -260,77 +269,77 @@ export default function Header() {
         onClose={setMobileMenuOpen}
         className="lg:hidden"
       >
-        <div className="fixed inset-0 z-10" >
-        <DialogPanel className=" bg-white/10 backdrop-blur-xl fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img alt="" src={Favicon.src} className="h-8 w-auto" />
-            </a>
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="h-6 w-6" />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-white hover:bg-gray-900">
-                    Product
-                    <ChevronDownIcon
-                      aria-hidden="true"
-                      className="h-5 w-5 flex-none group-data-[open]:rotate-180"
-                    />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...products, ...callsToAction].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-gray-900"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
+        <div className="fixed inset-0 z-10">
+          <DialogPanel className=" bg-white/10 backdrop-blur-xl fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="flex items-center justify-between">
+              <a href="#" className="-m-1.5 p-1.5">
+                <span className="sr-only">Your Company</span>
+                <img alt="" src={Favicon.src} className="h-8 w-auto" />
+              </a>
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(false)}
+                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
+                <span className="sr-only">Close menu</span>
+                <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+              </button>
+            </div>
+            <div className="mt-6 flow-root">
+              <div className="-my-6 divide-y divide-gray-500/10">
+                <div className="space-y-2 py-6">
+                  <Disclosure as="div" className="-mx-3">
+                    <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-white hover:bg-gray-900">
+                      Product
+                      <ChevronDownIcon
+                        aria-hidden="true"
+                        className="h-5 w-5 flex-none group-data-[open]:rotate-180"
+                      />
+                    </DisclosureButton>
+                    <DisclosurePanel className="mt-2 space-y-2">
+                      {[...products, ...callsToAction].map((item) => (
+                        <DisclosureButton
+                          key={item.name}
+                          as="a"
+                          href={item.href}
+                          className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-gray-900"
+                        >
+                          {item.name}
+                        </DisclosureButton>
+                      ))}
+                    </DisclosurePanel>
+                  </Disclosure>
 
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-900"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-900"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-900"
-                >
-                  Company
-                </a>
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-900"
-                >
-                  Log in
-                </a>
+                  <a
+                    href="#"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-900"
+                  >
+                    Features
+                  </a>
+                  <a
+                    href="#"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-900"
+                  >
+                    Marketplace
+                  </a>
+                  <a
+                    href="#"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-900"
+                  >
+                    Company
+                  </a>
+                </div>
+                <div className="py-6">
+                  <a
+                    href="#"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-900"
+                  >
+                    Log in
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </DialogPanel>
+          </DialogPanel>
         </div>
       </Dialog>
     </header>

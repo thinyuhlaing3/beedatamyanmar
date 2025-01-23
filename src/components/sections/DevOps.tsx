@@ -1,5 +1,5 @@
 import Card from "../Card";
-import OdooImg from "../img/Odoo.png"
+import OdooImg from "../img/Odoo.png";
 export default function DevOps() {
   return (
     <div className="-mt-28 pt-28">
@@ -59,16 +59,17 @@ export default function DevOps() {
               id="scroll-card-1"
               zIndex={0}
               margin={{ left: "15px", right: "15px" }}
-              title="300+ Ready to Use Components"
+              title="Moodle LMS"
               description="Skip repetitive tasks and focus on your core application logic to deliver stunning results out of the box."
               features={[
-                "Buttons, Inputs, Tables, Cards and more",
-                "Figma Design Files Included",
-                "Responsive & Customizable",
-                "Light & Dark Mode (coming soon)",
-                "Easy Integration with Existing Projects",
+                "Web & Mobile Application Development​",
+                "Moodle LMS ​",
+                "Moodle Workplace ​",
+                "Consultation, Implementation, Customize Development​",
+                "Cloud Server Hosting ​",
+                "ERP System for Educational Industry   ​",
               ]}
-              imageSrc="https://raw.githubusercontent.com/creativetimofficial/public-assets/refs/heads/master/material-tailwind-pro/v3/free-features-2.png"
+              imageSrc="https://lms.bvis.ch/pluginfile.php/117/course/overviewfiles/MTB.jpg"
             />
 
             {/* Card 3 */}
@@ -76,15 +77,10 @@ export default function DevOps() {
               id="scroll-card-2"
               zIndex={-1}
               margin={{ left: "30px", right: "30px" }}
-              title="AI Agents for Delivering Interfaces"
-              description="Let AI handle the heavy lifting for your UI design - generate fully coded blocks and pages in seconds."
-              features={[
-                "10+ AI Agents - Your Personal Consultants",
-                "AI Blocks Generator - Design prototypes faster",
-                "AI Pages Generator - Create UIs in seconds",
-                "SEO-Ready Content",
-              ]}
-              imageSrc="https://raw.githubusercontent.com/creativetimofficial/public-assets/refs/heads/master/material-tailwind-pro/v3/free-features-3.png"
+              title="Web Development"
+              description="At our company, we specialize in building powerful, scalable, and visually appealing websites using the latest technologies."
+              features={["WordPress", "React JS", "Node JS", "Next JS"]}
+              imageSrc="https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/673f2a3b44c1ed4901bb43bb_6386328bea96dffacc89946b_d1.webp"
             />
           </div>
         </div>

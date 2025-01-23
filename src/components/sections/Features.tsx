@@ -1,6 +1,10 @@
 import Container from "../Container";
 
 import Link from "../ViewTransitionLink";
+import web_icon from "../img/web-coding.png";
+import moodle_icon from "../img/education.png";
+import odoo_icon from "../img/erp.png";
+import more_icon from "../img/menu.png";
 
 export default function Features() {
   return (
@@ -20,20 +24,20 @@ export default function Features() {
         </svg>
 
         <h2 className="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
-          A technology-first approach to payments and finance
+          Our Services
         </h2>
-        <p className="text-gray-600 dark:text-gray-300">
+        {/* <p className="text-gray-600 dark:text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ad
           ipsum pariatur autem, fugit laborum in atque amet obcaecati? Nisi
           minima aspernatur, quidem nulla cupiditate nam consequatur eligendi
           magni adipisci.
-        </p>
+        </p> */}
       </div>
       <div className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
         <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div className="relative space-y-8 py-12 p-8">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png"
+              src={odoo_icon.src}
               className="w-12"
               width="512"
               height="512"
@@ -44,10 +48,10 @@ export default function Features() {
               <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
                 Odoo ERP
               </h5>
-              <p className="text-gray-600 dark:text-gray-300">
+              {/* <p className="text-gray-600 dark:text-gray-300">
                 Neque Dolor, fugiat non cum doloribus aperiam voluptates
                 nostrum.
-              </p>
+              </p> */}
             </div>
             <Link
               href="#"
@@ -72,7 +76,7 @@ export default function Features() {
         <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div className="relative space-y-8 py-12 p-8">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png"
+              src={moodle_icon.src}
               className="w-12"
               width="512"
               height="512"
@@ -83,10 +87,10 @@ export default function Features() {
               <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
                 Moodle LMS
               </h5>
-              <p className="text-gray-600 dark:text-gray-300">
+              {/* <p className="text-gray-600 dark:text-gray-300">
                 Neque Dolor, fugiat non cum doloribus aperiam voluptates
                 nostrum.
-              </p>
+              </p> */}
             </div>
             <Link
               href="#"
@@ -111,7 +115,7 @@ export default function Features() {
         <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div className="relative space-y-8 py-12 p-8">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png"
+              src={web_icon.src}
               className="w-12"
               width="512"
               height="512"
@@ -122,10 +126,10 @@ export default function Features() {
               <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
                 Website Development
               </h5>
-              <p className="text-gray-600 dark:text-gray-300">
+              {/* <p className="text-gray-600 dark:text-gray-300">
                 Neque Dolor, fugiat non cum doloribus aperiam voluptates
                 nostrum.
-              </p>
+              </p> */}
             </div>
             <Link
               href="#"
@@ -147,7 +151,7 @@ export default function Features() {
             </Link>
           </div>
         </div>
-        <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        {/* <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div className="relative space-y-8 py-12 p-8">
             <img
               src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png"
@@ -186,7 +190,8 @@ export default function Features() {
             </Link>
           </div>
         </div>
-        <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+         */}
+        {/* <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div className="relative space-y-8 py-12 p-8">
             <img
               src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png"
@@ -198,7 +203,7 @@ export default function Features() {
 
             <div className="space-y-2">
               <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-              Data Migration & Analysis – Bi​
+                Data Migration & Analysis – Bi​
               </h5>
               <p className="text-gray-600 dark:text-gray-300">
                 Neque Dolor, fugiat non cum doloribus aperiam voluptates
@@ -224,11 +229,12 @@ export default function Features() {
               </svg>
             </Link>
           </div>
-        </div>
+        </div> */}
+
         <div className="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div className="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png"
+              src={more_icon.src}
               className="w-12"
               width="512"
               height="512"
@@ -237,12 +243,12 @@ export default function Features() {
 
             <div className="space-y-2">
               <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                More features
+                More Service
               </h5>
-              <p className="text-gray-600 dark:text-gray-300">
+              {/* <p className="text-gray-600 dark:text-gray-300">
                 Neque Dolor, fugiat non cum doloribus aperiam voluptates
                 nostrum.
-              </p>
+              </p> */}
             </div>
             <Link
               href="#"
